@@ -55,6 +55,7 @@ public class TestCase3 extends BaseConfigurations {
 		homeObj.signupLoginLink.click();
 		LoginObj.fillWrongDetails();
 		LoginObj.verifyError();
+		driver.quit();
 	}
 	
 }

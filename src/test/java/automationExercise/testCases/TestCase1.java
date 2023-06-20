@@ -17,6 +17,7 @@ import automationExercise.pageObjects.LoginPage;
 import automationExercise.pageObjects.ProductDetailsPage;
 import automationExercise.pageObjects.ProductsPage;
 import automationExercise.pageObjects.SignUpPage;
+import config.ConfigProperties;
 import extra.AddRemover;
 
 public class TestCase1 extends BaseConfigurations {
@@ -32,11 +33,14 @@ public class TestCase1 extends BaseConfigurations {
 	SignUpPage         SignUpObj;
 	AddRemover         adRmvObj;
 	WebDriver          driver;
+	String             port;
 	
 	@Parameters({"Port"})
 	@BeforeClass
 	public void initialSetup(String Port) throws MalformedURLException{
 		System.out.println(Port);
+		ConfigProperties.initializePropertyFile();
+		port=Port;
 		driver=setUp(Port);
 		accntCreatedObj = new AccountCreatedPage(driver);
 		accntDelObj = new AccountDeleted(driver);
@@ -50,19 +54,19 @@ public class TestCase1 extends BaseConfigurations {
 	}
 	
 	@Test
-	public void scenarioTc1() {
+	public void scenarioTc1() throws InterruptedException {
 		
 		homeObj.verifyHome();
 		homeObj.signUpLoginClick();
 		LoginObj.verifyNewUserSignUp();
-		LoginObj.newUserSignUpDetails();
+		LoginObj.newUserSignUpDetails(port);
 		SignUpObj.verifyEnterLbl();
 		SignUpObj.fillAccountInformation();
 		accntCreatedObj.verifyAccountCreated();
-		homeObj.verifyUsername("Rajan");
+		homeObj.verifyUsername();
 		homeObj.deleteAccountBtn.click();
 		accntDelObj.verifyAcctDel();
-		driver.close();
+		driver.quit();
 	}
 	
 }

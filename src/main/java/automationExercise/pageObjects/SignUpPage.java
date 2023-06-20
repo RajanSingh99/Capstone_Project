@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import config.ConfigProperties;
 import extra.AddRemover;
 
 public class SignUpPage {
@@ -85,22 +86,22 @@ public class SignUpPage {
 	public void fillAccountInformation() {
 		adRmv.removeAdd();
 		mrRadioOptn.click();
-		passwordInput.sendKeys("Hellooo");
-		selection(daysDropdown).selectByValue("2");
-		selection(monthDropdown).selectByValue("3");
-		selection(yearsDropdown).selectByValue("1972");
+		passwordInput.sendKeys(ConfigProperties.property.getProperty("password"));
+		selection(daysDropdown).selectByValue(ConfigProperties.property.getProperty("day"));
+		selection(monthDropdown).selectByValue(ConfigProperties.property.getProperty("month"));
+		selection(yearsDropdown).selectByValue(ConfigProperties.property.getProperty("year"));
 		newsletterChkbox.click();
 		offersChkbox.click();
-		firstNameInpt.sendKeys("bittu");
-		lastNameInpt.sendKeys("halder");
-		companyInpt.sendKeys("ABC");
-		address1Inpt.sendKeys("abc road");
-		address2Inpt.sendKeys("jahangir para");
-		selection(countryDrpdwn).selectByValue("Canada");
-		stateInpt.sendKeys("manipur");
-		cityInpt.sendKeys("Agra");
-		zipcodeInpt.sendKeys("1234");
-		mobileNumberInpt.sendKeys("838388443");
+		firstNameInpt.sendKeys(ConfigProperties.property.getProperty("name"));
+		lastNameInpt.sendKeys(ConfigProperties.property.getProperty("lastName"));
+		companyInpt.sendKeys(ConfigProperties.property.getProperty("CompanyName"));
+		address1Inpt.sendKeys(ConfigProperties.property.getProperty("Address1"));
+		address2Inpt.sendKeys(ConfigProperties.property.getProperty("Address2"));
+		selection(countryDrpdwn).selectByValue(ConfigProperties.property.getProperty("country"));
+		stateInpt.sendKeys(ConfigProperties.property.getProperty("state"));
+		cityInpt.sendKeys(ConfigProperties.property.getProperty("city"));
+		zipcodeInpt.sendKeys(ConfigProperties.property.getProperty("zipcode"));
+		mobileNumberInpt.sendKeys(ConfigProperties.property.getProperty("mobileNo"));
 		createAcntBtn.click();
 	}
 	

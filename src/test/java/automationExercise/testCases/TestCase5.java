@@ -16,6 +16,7 @@ import automationExercise.pageObjects.LoginPage;
 import automationExercise.pageObjects.ProductDetailsPage;
 import automationExercise.pageObjects.ProductsPage;
 import automationExercise.pageObjects.SignUpPage;
+import config.ConfigProperties;
 import extra.AddRemover;
 
 public class TestCase5 extends BaseConfigurations {
@@ -29,11 +30,13 @@ public class TestCase5 extends BaseConfigurations {
 	SignUpPage         SignUpObj;
 	AddRemover         adRmvObj;
 	WebDriver          driver;
+	String             port;
 	
 	@Parameters({"Port"})
 	@BeforeClass
 	public void initialSetup(String Port) throws MalformedURLException{
-		System.out.println(Port);
+		ConfigProperties.initializePropertyFile();
+		port=Port;
 		driver=setUp(Port);
 		accntCreatedObj = new AccountCreatedPage(driver);
 		accntDelObj = new AccountDeleted(driver);
@@ -57,8 +60,9 @@ public class TestCase5 extends BaseConfigurations {
 		homeObj.cartLnk.click();
 		ProductsObj.verifyProductsAdded();
 		homeObj.signupLoginLink.click();
-		LoginObj.fillLoginDetails();
+		LoginObj.fillLoginDetails("email2",port);
 		homeObj.cartLnk.click();
 		ProductsObj.verifyProductsAdded();
+		driver.quit();
 	}
 }

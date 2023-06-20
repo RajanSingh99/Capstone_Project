@@ -24,9 +24,13 @@ public class AccountDeleted {
 	@FindBy(xpath="//*[@data-qa='continue-button']")
 	public WebElement continueBtn;
 	
-	public void verifyAcctDel() {
+	public void verifyAcctDel() throws InterruptedException {
 		Assert.assertEquals(accntDeletedLbl.isDisplayed(), true);
+		Thread.sleep(1000);
 		continueBtn.click();
+//		if(accntDeletedLbl.isDisplayed()==true) {
+//			continueBtn.click();
+//		}
 	}
 	
 }

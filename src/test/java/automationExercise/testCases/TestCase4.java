@@ -53,6 +53,7 @@ public class TestCase4 extends BaseConfigurations {
 		cartObj.verifycartPage();
 		cartObj.remove5prdct();
 		cartObj.verifyEmptyCart();
+		driver.quit();
 	}
 	
 }

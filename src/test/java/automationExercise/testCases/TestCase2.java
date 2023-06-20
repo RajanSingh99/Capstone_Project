@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -17,6 +18,7 @@ import automationExercise.pageObjects.LoginPage;
 import automationExercise.pageObjects.ProductDetailsPage;
 import automationExercise.pageObjects.ProductsPage;
 import automationExercise.pageObjects.SignUpPage;
+import config.ConfigProperties;
 import extra.AddRemover;
 
 public class TestCase2 extends BaseConfigurations {
@@ -32,11 +34,13 @@ public class TestCase2 extends BaseConfigurations {
 	SignUpPage         SignUpObj;
 	AddRemover         adRmvObj;
 	WebDriver          driver;
+	String             port;
 	
 	@Parameters({"Port"})
 	@BeforeClass
 	public void initialSetup(String Port) throws MalformedURLException{
-		System.out.println(Port);
+		ConfigProperties.initializePropertyFile();
+		port=Port;
 		driver=setUp(Port);
 		accntCreatedObj = new AccountCreatedPage(driver);
 		accntDelObj = new AccountDeleted(driver);
@@ -49,13 +53,25 @@ public class TestCase2 extends BaseConfigurations {
 		SignUpObj = new SignUpPage (driver);
 	}
 	
+	@BeforeMethod
+	public void createAcct() throws InterruptedException {
+		homeObj.signupLoginLink.click();
+		LoginObj.newUserSignUpConstant(port);
+		SignUpObj.fillAccountInformation();
+		accntCreatedObj.verifyAccountCreated();
+		homeObj.logoutBtn.click();
+		Thread.sleep(1000);
+		homeObj.orangeHome.click();
+	}
+	
 	@Test
-    public void scenarioTc2() {
+    public void scenarioTc2() throws InterruptedException {
     	homeObj.verifyHome();
     	homeObj.signUpLoginClick();
-    	LoginObj.fillLoginDetails();
-    	homeObj.verifyUsername("pllp");
+    	LoginObj.fillLoginDetails("email",port);
+    	homeObj.verifyUsername();
     	homeObj.delAccnt();
     	accntDelObj.verifyAcctDel();
+    	driver.quit();
     }
 }

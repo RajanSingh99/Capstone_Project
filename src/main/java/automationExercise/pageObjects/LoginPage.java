@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import config.ConfigProperties;
 import extra.AddRemover;
 
 public class LoginPage {
@@ -50,22 +51,39 @@ public class LoginPage {
 		Assert.assertEquals(newUserSignupLabel.isDisplayed(), true);
 		
 	}
-	public void newUserSignUpDetails() {
-		nameNewUserSignUp.sendKeys("Rajan");
-		emailNewUserSignUp.sendKeys("a24@gmail.com");
+	public void newUserSignUpConstant(String port) {
+		nameNewUserSignUp.sendKeys(ConfigProperties.property.getProperty("name"));
+		if(port.equals("6666")) {
+			  emailNewUserSignUp.sendKeys(ConfigProperties.property.getProperty("email6666"));
+			}else {
+			  emailNewUserSignUp.sendKeys(ConfigProperties.property.getProperty("email"));
+			}
+		signUpButton.click();
+	}
+	public void newUserSignUpDetails(String port) {
+		nameNewUserSignUp.sendKeys(ConfigProperties.property.getProperty("name"));
+		if(port.equals("6666")) {
+		  emailNewUserSignUp.sendKeys(Math.round((Math.random()*1000))+ ConfigProperties.property.getProperty("email6666"));
+		}else {
+		  emailNewUserSignUp.sendKeys(Math.round((Math.random()*1000))+ ConfigProperties.property.getProperty("email"));
+		}
 		signUpButton.click();
 	}
 	public void verifyLoginLbl() {
 		Assert.assertEquals(loginAccntLbl.isDisplayed(), true);
 	}
-	public void fillLoginDetails() {
-		emailLogin.sendKeys("pllp@gmail.com");
-		passwordLogin.sendKeys("pllp");
+	public void fillLoginDetails(String str,String  Port) {
+		if(Port.equals("6666")&& str.equals("email")) {
+		  emailLogin.sendKeys(ConfigProperties.property.getProperty("email6666"));
+		}else {
+			emailLogin.sendKeys(ConfigProperties.property.getProperty(str));
+		}
+		passwordLogin.sendKeys(ConfigProperties.property.getProperty("password"));
 		loginButton.click();
 	}
 	public void fillWrongDetails() {
-		emailLogin.sendKeys("gullu@pullu.com");
-		passwordLogin.sendKeys("gullu");
+		emailLogin.sendKeys("c"+ConfigProperties.property.getProperty("email"));
+		passwordLogin.sendKeys(ConfigProperties.property.getProperty("wrongPass"));
 		loginButton.click();
 	}
 	public void verifyError() {

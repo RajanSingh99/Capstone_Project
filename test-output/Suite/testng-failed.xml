@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Chrome Test(failed)">
-    <parameter name="Port" value="5555"/>
+  <test thread-count="5" parallel="tests" name="Edge Test(failed)">
+    <parameter name="Port" value="6666"/>
     <classes>
-      <class name="automationExercise.testCases.TestCase6">
+      <class name="automationExercise.testCases.TestCase5">
         <methods>
+          <include name="scenarioTc5"/>
           <include name="initialSetup"/>
-          <include name="scenarioTc6"/>
         </methods>
-      </class> <!-- automationExercise.testCases.TestCase6 -->
+      </class> <!-- automationExercise.testCases.TestCase5 -->
+      <class name="automationExercise.testCases.TestCase2">
+        <methods>
+          <include name="scenarioTc2"/>
+          <include name="initialSetup"/>
+          <include name="createAcct"/>
+        </methods>
+      </class> <!-- automationExercise.testCases.TestCase2 -->
     </classes>
-  </test> <!-- Chrome Test(failed) -->
+  </test> <!-- Edge Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

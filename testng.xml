@@ -4,10 +4,24 @@
   <test name="Chrome Test">
 <parameter name="Port" value="5555"/>
     <classes>
-<!--<class name="automationExercise.testCases.TestCase1"/> -->           
+           <class name="automationExercise.testCases.TestCase1"/>
+           <class name="automationExercise.testCases.TestCase2"/>
+           <class name="automationExercise.testCases.TestCase3"/>
+           <class name="automationExercise.testCases.TestCase4"/>
+           <class name="automationExercise.testCases.TestCase5"/>
            <class name="automationExercise.testCases.TestCase6"/>
     </classes>
   </test> 
-   
+   <test name="Edge Test">
+<parameter name="Port" value="6666"/>
+    <classes>
+           <class name="automationExercise.testCases.TestCase1"/>
+           <class name="automationExercise.testCases.TestCase2"/>
+           <class name="automationExercise.testCases.TestCase3"/>
+           <class name="automationExercise.testCases.TestCase4"/>
+           <class name="automationExercise.testCases.TestCase5"/>
+           <class name="automationExercise.testCases.TestCase6"/>
+    </classes>
+  </test> 
    <!-- Test -->
 </suite> <!-- Suite -->

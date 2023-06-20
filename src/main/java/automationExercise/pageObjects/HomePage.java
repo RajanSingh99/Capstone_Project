@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import config.ConfigProperties;
 import extra.AddRemover;
 
 public class HomePage {
@@ -24,7 +25,7 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//*[@href='/'][@style='color: orange;']")
+	@FindBy(xpath="//*[@href='/']")
 	 public WebElement orangeHome;
 	
 	@FindBy(xpath="//*[@href='/login']")
@@ -39,6 +40,9 @@ public class HomePage {
 	@FindBy(xpath="//*[@href='/view_cart']")
 	public WebElement cartLnk;
 	
+	@FindBy(xpath="//*[text()=' Logout']")
+	public WebElement logoutBtn;
+	
 	@FindBy(xpath="//*[@href='/products']")
 	public WebElement prdctsLnk;
 	
@@ -49,13 +53,15 @@ public class HomePage {
 		signupLoginLink.click();
 	}
 	
-	public void verifyUsername(String username) {
-		Assert.assertEquals(loginNameLbl.getText(), username);
+	public void verifyUsername() {
+		Assert.assertEquals(loginNameLbl.getText(), ConfigProperties.property.getProperty("name"));
 	}
 	public void delAccnt() {
 		deleteAccountBtn.click();
 		adRmv.removeAdd();
-		deleteAccountBtn.click();
+		if((driver.getTitle()).equals("Automation Exercise")) {
+			deleteAccountBtn.click();
+		}
 	}
 	public void addFivePrdct() throws InterruptedException {
 		Thread.sleep(1000);
