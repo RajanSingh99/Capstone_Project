@@ -1,6 +1,7 @@
 package automationExercise.pageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -68,6 +69,8 @@ public class HomePage {
 		adRmv.removeAdd();
 		Thread.sleep(1000);
 		for(int i=1;i<=5;i++) {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+	    	js.executeScript("window.scrollBy(0,50)", "");
 			act.moveToElement(driver.findElement(By.xpath("(//*[@class='productinfo text-center'])["+i+"]"))).build().perform();
 			Thread.sleep(2000);
 			System.out.println("(//*[@class='productinfo text-center'])["+i+"]");

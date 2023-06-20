@@ -4,12 +4,6 @@
   <test thread-count="5" parallel="tests" name="Edge Test(failed)">
     <parameter name="Port" value="6666"/>
     <classes>
-      <class name="automationExercise.testCases.TestCase5">
-        <methods>
-          <include name="scenarioTc5"/>
-          <include name="initialSetup"/>
-        </methods>
-      </class> <!-- automationExercise.testCases.TestCase5 -->
       <class name="automationExercise.testCases.TestCase2">
         <methods>
           <include name="scenarioTc2"/>

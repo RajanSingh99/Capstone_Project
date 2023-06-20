@@ -29,7 +29,9 @@ public class AccountCreatedPage {
 		Assert.assertEquals(accntCreatedLbl.isDisplayed(), true);
 		continueBtn.click();
 		adRmv.removeAdd();
-		continueBtn.click();
+		if(accntCreatedLbl.isDisplayed()) {
+			continueBtn.click();
+		}
 	}
 	
 	
