@@ -21,7 +21,7 @@ public class BaseConfigurations {
 	    {     
 	        if(Port.equalsIgnoreCase("5555"))
 	        {
-	            nodeURL = "http://192.168.1.206:4444/wd/hub";
+	            nodeURL = "http://192.168.1.202:4444/wd/hub";
 	            System.out.println("Chrome Browser Initiated");
 	            DesiredCapabilities capabilities = DesiredCapabilities.chrome();            
 	            capabilities.setBrowserName("chrome");
@@ -37,7 +37,7 @@ public class BaseConfigurations {
 	        else
 	            if(Port.equalsIgnoreCase("6666"))
 	            {
-	                nodeURL = "http://192.168.1.206:4444/wd/hub";
+	                nodeURL = "http://192.168.1.202:4444/wd/hub";
 	                System.out.println("Microsoft Edge Browser Initiated");
 	                DesiredCapabilities capabilities1 = DesiredCapabilities.firefox();
 	                capabilities1.setBrowserName("MicrosoftEdge");
@@ -54,6 +54,14 @@ public class BaseConfigurations {
 	    }
 	    public void scrollDown() {
 	    	JavascriptExecutor js = (JavascriptExecutor) driver;
-	    	js.executeScript("window.scrollBy(0,250)", "");
+	    	js.executeScript("window.scrollBy(0,350)", "");
+	    }
+	    public void waits() {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	    }
 }

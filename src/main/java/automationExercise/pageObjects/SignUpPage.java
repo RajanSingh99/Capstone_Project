@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import config.ConfigProperties;
-import extra.AddRemover;
+import utils.AddRemover;
 
 public class SignUpPage {
 	

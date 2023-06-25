@@ -17,7 +17,7 @@ import automationExercise.pageObjects.ProductDetailsPage;
 import automationExercise.pageObjects.ProductsPage;
 import automationExercise.pageObjects.SignUpPage;
 import config.ConfigProperties;
-import extra.AddRemover;
+import utils.AddRemover;
 
 public class TestCase6 extends BaseConfigurations {
 	AccountCreatedPage accntCreatedObj;
@@ -57,7 +57,7 @@ public class TestCase6 extends BaseConfigurations {
 		ProductsObj.verifyPage();
 		adRmvObj.removeAdd();
 		scrollDown();
-		Thread.sleep(1000);
+		waits();
 		ProductsObj.viewPrdctBtn.click();
 		if(driver.getTitle().equals("Automation Exercise - All Products")) {
 			ProductsObj.viewPrdctBtn.click();

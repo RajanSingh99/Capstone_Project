@@ -18,7 +18,7 @@ import automationExercise.pageObjects.ProductDetailsPage;
 import automationExercise.pageObjects.ProductsPage;
 import automationExercise.pageObjects.SignUpPage;
 import config.ConfigProperties;
-import extra.AddRemover;
+import utils.AddRemover;
 
 public class TestCase1 extends BaseConfigurations {
 	
@@ -38,7 +38,6 @@ public class TestCase1 extends BaseConfigurations {
 	@Parameters({"Port"})
 	@BeforeClass
 	public void initialSetup(String Port) throws MalformedURLException{
-		System.out.println(Port);
 		ConfigProperties.initializePropertyFile();
 		port=Port;
 		driver=setUp(Port);

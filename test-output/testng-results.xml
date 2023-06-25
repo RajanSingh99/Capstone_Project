@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-20T14:40:44 IST" name="Suite" finished-at="2023-06-20T14:46:05 IST" duration-ms="320545">
+  <suite started-at="2023-06-25T21:47:16Z" name="Suite" finished-at="2023-06-25T21:51:23Z" duration-ms="246687">
     <groups>
     </groups>
-    <test started-at="2023-06-20T14:40:44 IST" name="Chrome Test" finished-at="2023-06-20T14:45:10 IST" duration-ms="265973">
+    <test started-at="2023-06-25T21:47:16Z" name="Chrome Test" finished-at="2023-06-25T21:51:07Z" duration-ms="231601">
       <class name="automationExercise.testCases.TestCase1">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase1@6f46426d]" started-at="2023-06-20T14:40:44 IST" name="initialSetup" finished-at="2023-06-20T14:41:00 IST" duration-ms="15404" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase1@5b67bb7e]" started-at="2023-06-25T21:47:16Z" name="initialSetup" finished-at="2023-06-25T21:47:24Z" duration-ms="8327" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,13 +18,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="scenarioTc1()[pri:0, instance:automationExercise.testCases.TestCase1@6f46426d]" started-at="2023-06-20T14:41:00 IST" name="scenarioTc1" finished-at="2023-06-20T14:41:37 IST" duration-ms="37112" status="PASS">
+        <test-method signature="scenarioTc1()[pri:0, instance:automationExercise.testCases.TestCase1@5b67bb7e]" started-at="2023-06-25T21:47:24Z" name="scenarioTc1" finished-at="2023-06-25T21:47:58Z" duration-ms="34083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenarioTc1 -->
       </class> <!-- automationExercise.testCases.TestCase1 -->
       <class name="automationExercise.testCases.TestCase4">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase4@63a12c68]" started-at="2023-06-20T14:42:55 IST" name="initialSetup" finished-at="2023-06-20T14:43:01 IST" duration-ms="5927" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase4@56c4278e]" started-at="2023-06-25T21:49:13Z" name="initialSetup" finished-at="2023-06-25T21:49:20Z" duration-ms="6805" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,13 +35,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="scenarioTc3()[pri:0, instance:automationExercise.testCases.TestCase4@63a12c68]" started-at="2023-06-20T14:43:01 IST" name="scenarioTc3" finished-at="2023-06-20T14:43:35 IST" duration-ms="33577" status="PASS">
+        <test-method signature="scenarioTc4()[pri:0, instance:automationExercise.testCases.TestCase4@56c4278e]" started-at="2023-06-25T21:49:20Z" name="scenarioTc4" finished-at="2023-06-25T21:49:43Z" duration-ms="23337" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scenarioTc3 -->
+        </test-method> <!-- scenarioTc4 -->
       </class> <!-- automationExercise.testCases.TestCase4 -->
       <class name="automationExercise.testCases.TestCase5">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase5@28f3b248]" started-at="2023-06-20T14:43:35 IST" name="initialSetup" finished-at="2023-06-20T14:43:44 IST" duration-ms="9043" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase5@301eda63]" started-at="2023-06-25T21:49:43Z" name="initialSetup" finished-at="2023-06-25T21:49:51Z" duration-ms="7423" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,13 +52,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="scenarioTc5()[pri:0, instance:automationExercise.testCases.TestCase5@28f3b248]" started-at="2023-06-20T14:43:44 IST" name="scenarioTc5" finished-at="2023-06-20T14:44:46 IST" duration-ms="61651" status="PASS">
+        <test-method signature="scenarioTc5()[pri:0, instance:automationExercise.testCases.TestCase5@301eda63]" started-at="2023-06-25T21:49:51Z" name="scenarioTc5" finished-at="2023-06-25T21:50:36Z" duration-ms="45460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenarioTc5 -->
       </class> <!-- automationExercise.testCases.TestCase5 -->
       <class name="automationExercise.testCases.TestCase2">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase2@483f6d77]" started-at="2023-06-20T14:41:37 IST" name="initialSetup" finished-at="2023-06-20T14:41:44 IST" duration-ms="7161" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase2@609db546]" started-at="2023-06-25T21:47:58Z" name="initialSetup" finished-at="2023-06-25T21:48:05Z" duration-ms="6418" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,17 +69,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method is-config="true" signature="createAcct()[pri:0, instance:automationExercise.testCases.TestCase2@483f6d77]" started-at="2023-06-20T14:41:44 IST" name="createAcct" finished-at="2023-06-20T14:42:06 IST" duration-ms="21678" status="PASS">
+        <test-method is-config="true" signature="createAcct()[pri:0, instance:automationExercise.testCases.TestCase2@609db546]" started-at="2023-06-25T21:48:05Z" name="createAcct" finished-at="2023-06-25T21:48:35Z" duration-ms="30578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAcct -->
-        <test-method signature="scenarioTc2()[pri:0, instance:automationExercise.testCases.TestCase2@483f6d77]" started-at="2023-06-20T14:42:06 IST" name="scenarioTc2" finished-at="2023-06-20T14:42:36 IST" duration-ms="30836" status="PASS">
+        <test-method signature="scenarioTc2()[pri:0, instance:automationExercise.testCases.TestCase2@609db546]" started-at="2023-06-25T21:48:35Z" name="scenarioTc2" finished-at="2023-06-25T21:49:00Z" duration-ms="25159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenarioTc2 -->
       </class> <!-- automationExercise.testCases.TestCase2 -->
       <class name="automationExercise.testCases.TestCase3">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase3@7e5afaa6]" started-at="2023-06-20T14:42:36 IST" name="initialSetup" finished-at="2023-06-20T14:42:45 IST" duration-ms="8902" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase3@20f5281c]" started-at="2023-06-25T21:49:00Z" name="initialSetup" finished-at="2023-06-25T21:49:08Z" duration-ms="7283" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,13 +90,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="scenarioTc3()[pri:0, instance:automationExercise.testCases.TestCase3@7e5afaa6]" started-at="2023-06-20T14:42:45 IST" name="scenarioTc3" finished-at="2023-06-20T14:42:55 IST" duration-ms="10059" status="PASS">
+        <test-method signature="scenarioTc3()[pri:0, instance:automationExercise.testCases.TestCase3@20f5281c]" started-at="2023-06-25T21:49:08Z" name="scenarioTc3" finished-at="2023-06-25T21:49:13Z" duration-ms="5592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenarioTc3 -->
       </class> <!-- automationExercise.testCases.TestCase3 -->
       <class name="automationExercise.testCases.TestCase6">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase6@1b1426f4]" started-at="2023-06-20T14:44:46 IST" name="initialSetup" finished-at="2023-06-20T14:44:55 IST" duration-ms="9736" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase6@3d246ea3]" started-at="2023-06-25T21:50:36Z" name="initialSetup" finished-at="2023-06-25T21:50:49Z" duration-ms="12496" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,15 +107,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="scenarioTc6()[pri:0, instance:automationExercise.testCases.TestCase6@1b1426f4]" started-at="2023-06-20T14:44:55 IST" name="scenarioTc6" finished-at="2023-06-20T14:45:10 IST" duration-ms="14819" status="PASS">
+        <test-method signature="scenarioTc6()[pri:0, instance:automationExercise.testCases.TestCase6@3d246ea3]" started-at="2023-06-25T21:50:49Z" name="scenarioTc6" finished-at="2023-06-25T21:51:07Z" duration-ms="18604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenarioTc6 -->
       </class> <!-- automationExercise.testCases.TestCase6 -->
     </test> <!-- Chrome Test -->
-    <test started-at="2023-06-20T14:40:44 IST" name="Edge Test" finished-at="2023-06-20T14:46:05 IST" duration-ms="320544">
+    <test started-at="2023-06-25T21:47:16Z" name="Edge Test" finished-at="2023-06-25T21:51:23Z" duration-ms="246687">
       <class name="automationExercise.testCases.TestCase1">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase1@543588e6]" started-at="2023-06-20T14:40:44 IST" name="initialSetup" finished-at="2023-06-20T14:41:00 IST" duration-ms="16179" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase1@600b9d27]" started-at="2023-06-25T21:47:16Z" name="initialSetup" finished-at="2023-06-25T21:47:26Z" duration-ms="10370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -126,13 +126,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="scenarioTc1()[pri:0, instance:automationExercise.testCases.TestCase1@543588e6]" started-at="2023-06-20T14:41:00 IST" name="scenarioTc1" finished-at="2023-06-20T14:41:47 IST" duration-ms="46177" status="PASS">
+        <test-method signature="scenarioTc1()[pri:0, instance:automationExercise.testCases.TestCase1@600b9d27]" started-at="2023-06-25T21:47:26Z" name="scenarioTc1" finished-at="2023-06-25T21:48:23Z" duration-ms="57071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenarioTc1 -->
       </class> <!-- automationExercise.testCases.TestCase1 -->
       <class name="automationExercise.testCases.TestCase4">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase4@7c24b813]" started-at="2023-06-20T14:43:26 IST" name="initialSetup" finished-at="2023-06-20T14:43:41 IST" duration-ms="15241" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase4@7922d892]" started-at="2023-06-25T21:49:27Z" name="initialSetup" finished-at="2023-06-25T21:49:35Z" duration-ms="8245" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,13 +143,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="scenarioTc3()[pri:0, instance:automationExercise.testCases.TestCase4@7c24b813]" started-at="2023-06-20T14:43:41 IST" name="scenarioTc3" finished-at="2023-06-20T14:44:13 IST" duration-ms="32432" status="PASS">
+        <test-method signature="scenarioTc4()[pri:0, instance:automationExercise.testCases.TestCase4@7922d892]" started-at="2023-06-25T21:49:35Z" name="scenarioTc4" finished-at="2023-06-25T21:49:57Z" duration-ms="21525" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scenarioTc3 -->
+        </test-method> <!-- scenarioTc4 -->
       </class> <!-- automationExercise.testCases.TestCase4 -->
       <class name="automationExercise.testCases.TestCase5">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase5@2c35e847]" started-at="2023-06-20T14:44:13 IST" name="initialSetup" finished-at="2023-06-20T14:44:22 IST" duration-ms="8619" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase5@457c9034]" started-at="2023-06-25T21:49:57Z" name="initialSetup" finished-at="2023-06-25T21:50:12Z" duration-ms="15209" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -160,13 +160,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="scenarioTc5()[pri:0, instance:automationExercise.testCases.TestCase5@2c35e847]" started-at="2023-06-20T14:44:22 IST" name="scenarioTc5" finished-at="2023-06-20T14:45:28 IST" duration-ms="66351" status="PASS">
+        <test-method signature="scenarioTc5()[pri:0, instance:automationExercise.testCases.TestCase5@457c9034]" started-at="2023-06-25T21:50:12Z" name="scenarioTc5" finished-at="2023-06-25T21:51:00Z" duration-ms="47930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenarioTc5 -->
       </class> <!-- automationExercise.testCases.TestCase5 -->
       <class name="automationExercise.testCases.TestCase2">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase2@5d7148e2]" started-at="2023-06-20T14:41:47 IST" name="initialSetup" finished-at="2023-06-20T14:42:00 IST" duration-ms="13635" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase2@3688eb5b]" started-at="2023-06-25T21:48:23Z" name="initialSetup" finished-at="2023-06-25T21:48:33Z" duration-ms="9300" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -177,17 +177,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method is-config="true" signature="createAcct()[pri:0, instance:automationExercise.testCases.TestCase2@5d7148e2]" started-at="2023-06-20T14:42:00 IST" name="createAcct" finished-at="2023-06-20T14:42:37 IST" duration-ms="36458" status="PASS">
+        <test-method is-config="true" signature="createAcct()[pri:0, instance:automationExercise.testCases.TestCase2@3688eb5b]" started-at="2023-06-25T21:48:33Z" name="createAcct" finished-at="2023-06-25T21:48:56Z" duration-ms="23500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAcct -->
-        <test-method signature="scenarioTc2()[pri:0, instance:automationExercise.testCases.TestCase2@5d7148e2]" started-at="2023-06-20T14:42:37 IST" name="scenarioTc2" finished-at="2023-06-20T14:43:09 IST" duration-ms="31958" status="PASS">
+        <test-method signature="scenarioTc2()[pri:0, instance:automationExercise.testCases.TestCase2@3688eb5b]" started-at="2023-06-25T21:48:56Z" name="scenarioTc2" finished-at="2023-06-25T21:49:15Z" duration-ms="18675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenarioTc2 -->
       </class> <!-- automationExercise.testCases.TestCase2 -->
       <class name="automationExercise.testCases.TestCase3">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase3@25fb8912]" started-at="2023-06-20T14:43:09 IST" name="initialSetup" finished-at="2023-06-20T14:43:19 IST" duration-ms="10404" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase3@69f1a286]" started-at="2023-06-25T21:49:15Z" name="initialSetup" finished-at="2023-06-25T21:49:22Z" duration-ms="7157" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -198,13 +198,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="scenarioTc3()[pri:0, instance:automationExercise.testCases.TestCase3@25fb8912]" started-at="2023-06-20T14:43:19 IST" name="scenarioTc3" finished-at="2023-06-20T14:43:26 IST" duration-ms="6663" status="PASS">
+        <test-method signature="scenarioTc3()[pri:0, instance:automationExercise.testCases.TestCase3@69f1a286]" started-at="2023-06-25T21:49:22Z" name="scenarioTc3" finished-at="2023-06-25T21:49:27Z" duration-ms="5307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenarioTc3 -->
       </class> <!-- automationExercise.testCases.TestCase3 -->
       <class name="automationExercise.testCases.TestCase6">
-        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase6@7bd4937b]" started-at="2023-06-20T14:45:28 IST" name="initialSetup" finished-at="2023-06-20T14:45:44 IST" duration-ms="15385" status="PASS">
+        <test-method is-config="true" signature="initialSetup(java.lang.String)[pri:0, instance:automationExercise.testCases.TestCase6@345f69f3]" started-at="2023-06-25T21:51:00Z" name="initialSetup" finished-at="2023-06-25T21:51:08Z" duration-ms="7627" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -215,7 +215,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetup -->
-        <test-method signature="scenarioTc6()[pri:0, instance:automationExercise.testCases.TestCase6@7bd4937b]" started-at="2023-06-20T14:45:44 IST" name="scenarioTc6" finished-at="2023-06-20T14:46:05 IST" duration-ms="20995" status="PASS">
+        <test-method signature="scenarioTc6()[pri:0, instance:automationExercise.testCases.TestCase6@345f69f3]" started-at="2023-06-25T21:51:08Z" name="scenarioTc6" finished-at="2023-06-25T21:51:23Z" duration-ms="14747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scenarioTc6 -->

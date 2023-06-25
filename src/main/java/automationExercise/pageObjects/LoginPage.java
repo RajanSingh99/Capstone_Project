@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import config.ConfigProperties;
-import extra.AddRemover;
+import utils.AddRemover;
 
 public class LoginPage {
 	

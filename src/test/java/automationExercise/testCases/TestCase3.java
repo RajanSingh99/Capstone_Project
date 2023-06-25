@@ -17,7 +17,7 @@ import automationExercise.pageObjects.LoginPage;
 import automationExercise.pageObjects.ProductDetailsPage;
 import automationExercise.pageObjects.ProductsPage;
 import automationExercise.pageObjects.SignUpPage;
-import extra.AddRemover;
+import utils.AddRemover;
 
 public class TestCase3 extends BaseConfigurations {
 
@@ -36,7 +36,6 @@ public class TestCase3 extends BaseConfigurations {
 	@Parameters({"Port"})
 	@BeforeClass
 	public void initialSetup(String Port) throws MalformedURLException{
-		System.out.println(Port);
 		driver=setUp(Port);
 		accntCreatedObj = new AccountCreatedPage(driver);
 		accntDelObj = new AccountDeleted(driver);

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import config.ConfigProperties;
-import extra.AddRemover;
+import utils.AddRemover;
 
 public class HomePage {
 	
@@ -18,11 +18,13 @@ public class HomePage {
     AddRemover adRmv;
     Actions    act;
     AddedPopUp addPopObj;
+    JavascriptExecutor js;
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
 		adRmv=new AddRemover(driver);
 		act=new Actions(driver);
 		addPopObj=new AddedPopUp(driver);
+		js = (JavascriptExecutor) driver;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -50,6 +52,10 @@ public class HomePage {
 	public void verifyHome() {
 		Assert.assertEquals(driver.getTitle(), "Automation Exercise");
 	}
+	public void scrollDown() {
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+    	js.executeScript("window.scrollBy(0,350)", "");
+    }
 	public void signUpLoginClick() {
 		signupLoginLink.click();
 	}
@@ -67,14 +73,10 @@ public class HomePage {
 	public void addFivePrdct() throws InterruptedException {
 		Thread.sleep(1000);
 		adRmv.removeAdd();
+		scrollDown();
 		Thread.sleep(1000);
 		for(int i=1;i<=5;i++) {
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-	    	js.executeScript("window.scrollBy(0,50)", "");
-			act.moveToElement(driver.findElement(By.xpath("(//*[@class='productinfo text-center'])["+i+"]"))).build().perform();
-			Thread.sleep(2000);
-			System.out.println("(//*[@class='productinfo text-center'])["+i+"]");
-			driver.findElement(By.xpath("(//*[text()='Add to cart'])["+i*2+"]")).click();
+			js.executeScript("arguments[0].click();", driver.findElement(By.xpath("(//*[text()='Add to cart'])["+i*2+"]")));
 			Thread.sleep(1000);
 			addPopObj.continueShoppingBtn.click();
 		}

@@ -19,7 +19,7 @@ import automationExercise.pageObjects.ProductDetailsPage;
 import automationExercise.pageObjects.ProductsPage;
 import automationExercise.pageObjects.SignUpPage;
 import config.ConfigProperties;
-import extra.AddRemover;
+import utils.AddRemover;
 
 public class TestCase2 extends BaseConfigurations {
 	
@@ -60,7 +60,7 @@ public class TestCase2 extends BaseConfigurations {
 		SignUpObj.fillAccountInformation();
 		accntCreatedObj.verifyAccountCreated();
 		homeObj.logoutBtn.click();
-		Thread.sleep(1000);
+		waits();
 		homeObj.orangeHome.click();
 	}
 	

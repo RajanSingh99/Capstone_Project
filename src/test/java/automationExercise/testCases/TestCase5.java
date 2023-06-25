@@ -17,7 +17,7 @@ import automationExercise.pageObjects.ProductDetailsPage;
 import automationExercise.pageObjects.ProductsPage;
 import automationExercise.pageObjects.SignUpPage;
 import config.ConfigProperties;
-import extra.AddRemover;
+import utils.AddRemover;
 
 public class TestCase5 extends BaseConfigurations {
 	AccountCreatedPage accntCreatedObj;

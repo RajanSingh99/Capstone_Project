@@ -16,7 +16,8 @@ import automationExercise.pageObjects.LoginPage;
 import automationExercise.pageObjects.ProductDetailsPage;
 import automationExercise.pageObjects.ProductsPage;
 import automationExercise.pageObjects.SignUpPage;
-import extra.AddRemover;
+import config.ConfigProperties;
+import utils.AddRemover;
 
 public class TestCase4 extends BaseConfigurations {
 	AccountCreatedPage accntCreatedObj;
@@ -33,7 +34,7 @@ public class TestCase4 extends BaseConfigurations {
 	@Parameters({"Port"})
 	@BeforeClass
 	public void initialSetup(String Port) throws MalformedURLException{
-		System.out.println(Port);
+		ConfigProperties.initializePropertyFile();
 		driver=setUp(Port);
 		accntCreatedObj = new AccountCreatedPage(driver);
 		accntDelObj = new AccountDeleted(driver);
@@ -46,7 +47,7 @@ public class TestCase4 extends BaseConfigurations {
 	}
 	
 	@Test
-	public void scenarioTc3() throws InterruptedException {
+	public void scenarioTc4() throws InterruptedException {
 		homeObj.verifyHome();
 		homeObj.addFivePrdct();
 		homeObj.cartLnk.click();
